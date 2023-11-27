@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link css  -->
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <!-- Link JavaScript -->
+    <script src="js/main.js" defer></script>
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Project - Weather Forecast</title>
+</head>
+<body>
+    <div class="bigger-box">
+
+        <div class="search-box">
+            <input id="input-city" type="text" placeholder="Digite o nome da cidade">
+            <button onclick="buttonSearch()" class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="box-info-weather">
+            <h2 class="info">Tempo em <span id="weather-city"></span></h2>
+            <p id="info-degrees"></p>
+        </div>
+
+        <div class="more-info">
+            
+            <div id="box-weather">
+                <img id="icon-weather" src="https://openweathermap.org/img/wn/04n.png" alt="Icon weather">
+                <p  id="description-weather">Nublado</p>
+            </div>
+
+            <p>Umidade: <span id="moisture-info">48%</span></p>
+        </div>
+
+    </div>
+</body>
+</html>

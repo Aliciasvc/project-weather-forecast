@@ -1,0 +1,127 @@
+    :root {
+        --dark-150: #141417;
+        --dark-100: #4b4a50;
+
+        --grey-100: #898992;
+        --grey-50: #cad6d4;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+    body {
+        background-image: url(https://source.unsplash.com/1600x900/?landscape);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .bigger-box {
+        min-width: 25%;
+        min-height: 55vh;
+        background-color: rgba(20, 20, 23, 0.8);
+        padding: 2rem;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.search-box input {
+    background-color: rgba(75, 74, 80, 0.5);
+    border: none;
+    border-radius: 8px;
+    padding: 0 5px;
+    margin: 0 15px;
+    height: 2rem;
+    outline: none;
+    cursor: text;
+    color: var(--grey-50);
+}
+
+.search-box input::placeholder {
+    padding: 0 3px;
+    color: var(--grey-50);
+    font-weight: 500;
+}
+
+.search-button {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(75, 74, 80, 0.5);
+    border: none;
+    border-radius: 20px;
+    transition: 300ms;
+}
+
+.search-button:hover {
+    background-color: rgba(171, 171, 171, 0.535);
+    transform: scale(1.099);
+}
+
+.search-button i {
+    font-size: 1.388em;
+    color: var(--grey-50);
+
+}
+
+.box-info-weather {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    color: var(--grey-50);
+}
+
+.info {
+    font-weight: 500;
+    padding-bottom: .8rem;
+}
+
+.more-info {
+    padding: 1.8rem 0;
+    color: var(--grey-50);
+}
+
+#box-weather{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#icon-weather {
+    width: 48px;
+}
+
+#info-paragraph {
+    padding: 1rem 0;
+}
+
+#icon-weather {
+    padding-right: 10px;
+}
+
+/* Mobile version */
+
+@media screen and (min-width:300px) and (max-width:440px) {
+    .bigger-box {
+        width: 80%;
+    }
+
+    .search-box input {
+        width: 69%;
+    }
+
+    .search-box input::placeholder {
+        font-size: .850em;
+    }
+}
